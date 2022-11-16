@@ -1,0 +1,34 @@
+ChipEmu README
+--------------
+
+What is ChipEmu?
+ChipEmu is a public project to program and emulate various chips for research and development of software.
+The project is aimed to accurately emulate the chips to function as a processor for programming.
+This project also contains tools for programming on each chip to be optimized for quality, speed, and size (in that order).
+
+What is the Project Plan:
+Versioning will start off at 0.0.0 (codenamed "Public Beta") with a x.y.z versioning pattern, with 'x' from 0 on, while 'y' and 'z' run from 0-9.
+
+0.0.0 "Public Beta" Project Plan:*
+Chips to Emulate (Run Software On)
+Introduce emulation through the Intel 8086 Chip (with the 5MHz Frequency)
+Introduce emulation through the Intel 8086-1 Chip (with the 10MHz Frequency)
+Introduce emulation through the Motorola MC6845 Chip (with the 1MHz Frequency)
+Introduce emulation through the Motorola MC68A45 Chip (with the 1.5MHz Frequency)
+Introduce emulation through the Texas Instruments TMS9918 Chip (with the 60Hz Frequency)
+Chips to Emulate (Peripherals)
+Introduce video emulation through the Texas Instruments TMS9918 Chip (Driver: tm9918_video)
+ChipEmu C Compiler (Compile C Code)
+Compile for the Intel 8086 Chip
+Compile for the Motorola MC6845 Chip
+char, int, long, double, and long long datatypes
+#include and #define preprocessor commands
+Standard C Library (libc)
+fclose, fgetc, fopen, fseek, getchar, putc, rename, setbuf, and sscanf functions (stdio.h header)
+stderr, stdin, and stdout variables (stdio.h header)
+clock_t, dev_t, mode_t, pid_t, and size_t datatypes (sys/types.h header)
+ChipEmu C++ Compiler (Compile C++ Code)
+void, char, long, int, signed, signed char, unsigned, unsigned char, class, struct, namespace, and long int datatypes
+Standard C++ Library (libcpp)
+std::basic_string, std:wstring, and std:u16string classes (string header)
+*This is what is remaining before version 0.0.0 can be released.
