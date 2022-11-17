@@ -1,34 +1,26 @@
-ChipEmu README
---------------
+ChipDev - Development for various chips
 
-What is ChipEmu?
-ChipEmu is a public project to program and emulate various chips for research and development of software.
-The project is aimed to accurately emulate the chips to function as a processor for programming.
-This project also contains tools for programming on each chip to be optimized for quality, speed, and size (in that order).
+ChipDev Features:
+ChipDev Assembler (chipasm) - An Assembler designed to assemble high quality executables with special optimizations
+ChipDev C Compiler (chipc) - A C Compiler designed to create optimized executables for various chips
+ChipDev C++ Compiler (chipcpp) - A C++ Compiler designed to create optimized executable for various chips
+ChipDev Debugger (chipdbg) - A Debugger designed to test and debug various programs for a variety of chips
+ChipDev Emulator API (chipemuapi) - An Emulator API for use in the ChipDev Debugger
+ChipDev Linker (chipld) - A Linker to link object files together for various chips with special optimizations to ensure a high quality executable
+ChipDev Python Compiler (chippy) - A Python Compiler designed to create optimized executables for various chips
+ChipDev Standard C Library (chiplibc) - The C Library for ChipDev to be compatible with every C standard with extensions
+ChipDev Standard C++ Library (chiplibcpp) - The C++ Library for ChipDev to be compatible with every C++ standard with extensions
+ChipDev Standard Python Libry (chiplibpy) - The Python Library for ChipDev to be compatible with every Python standard with extensions
 
-What is the Project Plan:
-Versioning will start off at 0.0.0 (codenamed "Public Beta") with a x.y.z versioning pattern, with 'x' from 0 on, while 'y' and 'z' run from 0-9.
+ChipDev Supported Chips:
+Intel SA-110 (chips/intel/sa-110) - StrongARM Microprocessor
+Silicon Labs SI4362 (chips/silicon_labs/si4362) - High-Performance, Low-Current Receiver
+Texas Instruments TLV320AIC33 (chips/texas_instruments/tlv320aic33) - Low Power Stereo Audio Codec for Portable Audio/Telephony
 
-0.0.0 "Public Beta" Project Plan:*
-Chips to Emulate (Run Software On)
-Introduce emulation through the Intel 8086 Chip (with the 5MHz Frequency)
-Introduce emulation through the Intel 8086-1 Chip (with the 10MHz Frequency)
-Introduce emulation through the Motorola MC6845 Chip (with the 1MHz Frequency)
-Introduce emulation through the Motorola MC68A45 Chip (with the 1.5MHz Frequency)
-Introduce emulation through the Texas Instruments TMS9918 Chip (with the 60Hz Frequency)
-Chips to Emulate (Peripherals)
-Introduce video emulation through the Texas Instruments TMS9918 Chip (Driver: tm9918_video)
-ChipEmu C Compiler (Compile C Code)
-Compile for the Intel 8086 Chip
-Compile for the Motorola MC6845 Chip
-char, int, long, double, and long long datatypes
-#include and #define preprocessor commands
-Standard C Library (libc)
-fclose, fgetc, fopen, fseek, getchar, putc, rename, setbuf, and sscanf functions (stdio.h header)
-stderr, stdin, and stdout variables (stdio.h header)
-clock_t, dev_t, mode_t, pid_t, and size_t datatypes (sys/types.h header)
-ChipEmu C++ Compiler (Compile C++ Code)
-void, char, long, int, signed, signed char, unsigned, unsigned char, class, struct, namespace, and long int datatypes
-Standard C++ Library (libcpp)
-std::basic_string, std:wstring, and std:u16string classes (string header)
-*This is what is remaining before version 0.0.0 can be released.
+ChipDev /chips Directory Layout:
+/chips/[creator]/[model number] - [creator] is the manufacturer of the chip, while [model number] is the model number of the series of chips
+-> /api - Chip API for Chip-Related Features
+-> /config - Configuration Files for Building ChipDev Features
+-> /docs - Chip Documentation
+-> /examples - Example Code for Testing the Tools
+-> /mkfiles - Makefiles for Building Chip-Specific Builds of ChipDev Tools
