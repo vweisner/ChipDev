@@ -2,25 +2,36 @@ ChipDev - Development for various chips
 
 ChipDev Features:
 ChipDev Assembler (chipasm) - An Assembler designed to assemble high quality executables with special optimizations
+ChipDev Basic Compiler (chipbas) - Compiler Basic code with optimizations for various chips
 ChipDev C Compiler (chipc) - A C Compiler designed to create optimized executables for various chips
 ChipDev C++ Compiler (chipcpp) - A C++ Compiler designed to create optimized executable for various chips
 ChipDev Debugger (chipdbg) - A Debugger designed to test and debug various programs for a variety of chips
 ChipDev Emulator API (chipemuapi) - An Emulator API for use in the ChipDev Debugger
+ChipDev Extracter (chipextract) - Extract archives on platforms without the required extractor
+ChipDev Java Compiler (chipjava) - Compile Java code to optimized native code for various chips
+ChipDev Librarian (chiplib) - Creates static and dynamic libraries
 ChipDev Linker (chipld) - A Linker to link object files together for various chips with special optimizations to ensure a high quality executable
 ChipDev Python Compiler (chippy) - A Python Compiler designed to create optimized executables for various chips
-ChipDev Standard C Library (chiplibc) - The C Library for ChipDev to be compatible with every C standard with extensions
-ChipDev Standard C++ Library (chiplibcpp) - The C++ Library for ChipDev to be compatible with every C++ standard with extensions
-ChipDev Standard Python Libry (chiplibpy) - The Python Library for ChipDev to be compatible with every Python standard with extensions
+ChipDev Standard C Library (chiplibc) - The C Library for ChipDev to be compatible with every programming standard with extensions
+ChipDev Standard C++ Library (chiplibcpp) - The C++ Library for ChipDev to be compatible with every programming standard with extensions
+ChipDev Standard Python Library (chiplibpy) - The Python Library for ChipDev to be compatible with every programming standard with extensions
+ChipDev TextDevelop (chiptxt) - A Plain Text Editor for coding
+ChipDev Walker (chipwalk) - View Object files and Executables with stats on every dependency for every function, class, variable, etc.
 
 ChipDev Supported Chips:
-Intel SA-110 (chips/intel/sa-110) - StrongARM Microprocessor
-Silicon Labs SI4362 (chips/silicon_labs/si4362) - High-Performance, Low-Current Receiver
-Texas Instruments TLV320AIC33 (chips/texas_instruments/tlv320aic33) - Low Power Stereo Audio Codec for Portable Audio/Telephony
+Intel 21154 (Chips/intel/21154) - PCI-to-PCI Bridge
+Intel SA-110 (Chips/intel/sa-110) - StrongARM Microprocessor
+Motorola MC6847 (Chips/motorola/mc6847) - Non-Interface Video Display Generator
+Motorola MC6847Y (Chips/motorola/mc6847y) - Interface Video Display Generator
+Silicon Labs SI4362 (Chips/silicon_labs/si4362) - High-Performance, Low-Current Receiver
+Texas Instruments TLV320AIC33 (Chips/texas_instruments/tlv320aic33) - Low Power Stereo Audio Codec for Portable Audio/Telephony
+Winbond W25N01GW (Chips/winbond/w25n01gw) - Serial Flash Memory
 
-ChipDev /chips Directory Layout:
-/chips/[creator]/[model number] - [creator] is the manufacturer of the chip, while [model number] is the model number of the series of chips
+ChipDev /Chips Directory Layout:
+/Chips/[creator]/[model number] - [creator] is the manufacturer of the chip, while [model number] is the model number of the series of chips
 -> /api - Chip API for Chip-Related Features
 -> /config - Configuration Files for Building ChipDev Features
 -> /docs - Chip Documentation
+-> /emu - Emulation Files for ChipDev Debugger
 -> /examples - Example Code for Testing the Tools
 -> /mkfiles - Makefiles for Building Chip-Specific Builds of ChipDev Tools
