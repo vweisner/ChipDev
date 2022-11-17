@@ -1,0 +1,19 @@
+ChipDev Standard C Library
+--------------------------
+
+The Purpose of the Standard C Library is to build a library for the ChipDev C Compiler that would support many programming standards and many extensions to the C programming language.
+
+Standards:
+These are the standards we are aiming to support.
+
+Headers:
+These are the files to include for definitions.
+assert.h
+complex.h
+stddef.h
+stdio.h
+string.h
+
+Functions:
+The are the functions in the library.
+strlen (string.h) - Returns the length of a given string
