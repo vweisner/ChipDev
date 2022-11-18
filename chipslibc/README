@@ -5,9 +5,12 @@ The Purpose of the Standard C Library is to build a library for the ChipDev C Co
 
 Standards:
 These are the standards we are aiming to support.
+ISO/IEC 9593-4:1991 (PHIGS91)
 ISO/IEC 9899:1999 (C99)
 ISO/IEC 9899:2011 (C11)
-ISO/IEC/IEEE 9945:2009 (POSIX7)
+ISO/IEC/IEEE 9945:2009 (POSIX09)
+
+Keywords (Defined in ../chipslibc/README
 
 Headers:
 These are the files to include for definitions.
@@ -32,10 +35,17 @@ strlen (string.h) - Returns the length of a given string
 
 Macros:
 These are the macros in the library.
-CHAR_BIT (limits.h) Number of bits in a byte
+bool (stdbool.h) - Convenience Macro that expands to _Bool
+CHAR_BIT (limits.h) - Number of bits in a byte
+LC_CTYPE (locale.h) - Locale Category for the setlocale function
 NULL (stddef.h) - Null pointer constant
 
 Typedefs:
 These are the types defined in the library.
 gid_t (sys/types.h) - Used for Group IDs
-size_t (sys/types.h) - Used for Sizes of Objects
+size_t (stddef.h; sys/types.h) - Used for Sizes of Objects
+
+Structs:
+These are the structures defined in the library.
+lconv (locale.h) - Formatting details that are returned by localeconv
+-> mon_grouping - A string whose elements indicate the sizes of digit groups
