@@ -5,15 +5,37 @@ The Purpose of the Standard C Library is to build a library for the ChipDev C Co
 
 Standards:
 These are the standards we are aiming to support.
+ISO/IEC 9899:1999 (C99)
+ISO/IEC 9899:2011 (C11)
+ISO/IEC/IEEE 9945:2009 (POSIX7)
 
 Headers:
 These are the files to include for definitions.
 assert.h
 complex.h
+limits.h
+locale.h
+signal.h
+stdbool.h
 stddef.h
+stdint.h
 stdio.h
 string.h
+sys/types.h
+uchar.h
+wchar.h
 
 Functions:
-The are the functions in the library.
+These are the functions in the library.
+printf (stdio.h) - Prints formastted output to stdout, a file stream, or a buffer
 strlen (string.h) - Returns the length of a given string
+
+Macros:
+These are the macros in the library.
+CHAR_BIT (limits.h) Number of bits in a byte
+NULL (stddef.h) - Null pointer constant
+
+Typedefs:
+These are the types defined in the library.
+gid_t (sys/types.h) - Used for Group IDs
+size_t (sys/types.h) - Used for Sizes of Objects
