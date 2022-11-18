@@ -6,21 +6,36 @@ ChipDev Basic Compiler (chipbas) - Compiler Basic code with optimizations for va
 ChipDev C Compiler (chipc) - A C Compiler designed to create optimized executables for various chips
 ChipDev C++ Compiler (chipcpp) - A C++ Compiler designed to create optimized executable for various chips
 ChipDev Debugger (chipdbg) - A Debugger designed to test and debug various programs for a variety of chips
+ChipDev DocMaker (chipdocmake) - Source-to-Doc Document Maker
 ChipDev Emulator API (chipemuapi) - An Emulator API for use in the ChipDev Debugger
 ChipDev Extracter (chipextract) - Extract archives on platforms without the required extractor
+ChipDev FontEdit (chipfed) - Edit fonts with this simple tool
+ChipDev FTP Client (chipftp) - Connect to FTP servers to download source code
+ChipDev Hex Editor (chiphex) - Edit files in binary, hexadecimal, plain text, decimal, undecimal, and more
+ChipDev Icon Editor (chipicon) - Edit icon files used with your executables and libraries
 ChipDev Java Compiler (chipjava) - Compile Java code to optimized native code for various chips
 ChipDev Librarian (chiplib) - Creates static and dynamic libraries
 ChipDev Linker (chipld) - A Linker to link object files together for various chips with special optimizations to ensure a high quality executable
+ChipDev Manual (chipman) - Documentation about the whole project
+ChipDev Maker (chipmake) - Reads Makefiles and executes the proper commands
 ChipDev Python Compiler (chippy) - A Python Compiler designed to create optimized executables for various chips
+ChipDev Samples (chipsamples) - Pre-built sample executables for comparing your build and the master build (code is under /Chips/[creator]/[model number]/examples)
+ChipDev Shell (chipsh) - A POSIX-compatible shell for use with compiling
+ChipDev Standard Basic Library (chiplibbas) - The Basic Library for ChipDev
 ChipDev Standard C Library (chiplibc) - The C Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev Standard C++ Library (chiplibcpp) - The C++ Library for ChipDev to be compatible with every programming standard with extensions
+ChipDev Standard Java Library (chiplibjava) - The Java Library for ChipDev
 ChipDev Standard Python Library (chiplibpy) - The Python Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev TextDevelop (chiptxt) - A Plain Text Editor for coding
 ChipDev Walker (chipwalk) - View Object files and Executables with stats on every dependency for every function, class, variable, etc.
 
 ChipDev Supported Chips:
 Intel 21154 (Chips/intel/21154) - PCI-to-PCI Bridge
+Intel 82801AA (Chips/intel/82801aa) - I/O Controller Hub AC '97 (ICH)
+Intel 82801AB (Chips/intel/82801ab) - I/O Controller Hub AC '97 (ICH0)
+Intel 82801EB (Chips/intel/82801eb) - I/O Controller Hub 5 (ICH5)
 Intel SA-110 (Chips/intel/sa-110) - StrongARM Microprocessor
+Motorola MC68349 (Chips/motorola/mc68349) - High Performance Integrated Microprocessor
 Motorola MC6847 (Chips/motorola/mc6847) - Non-Interface Video Display Generator
 Motorola MC6847Y (Chips/motorola/mc6847y) - Interface Video Display Generator
 Silicon Labs SI4362 (Chips/silicon_labs/si4362) - High-Performance, Low-Current Receiver
