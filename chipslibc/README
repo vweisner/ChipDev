@@ -10,7 +10,7 @@ ISO/IEC 9899:1999 (C99)
 ISO/IEC 9899:2011 (C11)
 ISO/IEC/IEEE 9945:2009 (POSIX09)
 
-Keywords (Defined in ../chipslibc/README
+Keywords (Defined in ../chipslibc/README)
 
 Headers:
 These are the files to include for definitions.
