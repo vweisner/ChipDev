@@ -6,7 +6,9 @@ ChipDev Basic Compiler (chipbas) - Compiler Basic code with optimizations for va
 ChipDev C Compiler (chipc) - A C Compiler designed to create optimized executables for various chips
 ChipDev C++ Compiler (chipcpp) - A C++ Compiler designed to create optimized executable for various chips
 ChipDev Debugger (chipdbg) - A Debugger designed to test and debug various programs for a variety of chips
+ChipDev DiskTool (chipdsk) - A Tool for storage to repair, debug, restore, format, resize, inspect, realign, defragment, remove, and create partitions, among other uses
 ChipDev DocMaker (chipdocmake) - Source-to-Doc Document Maker
+ChipDev Documents (chipdocs) - Documents for possible expansions to ChipDev that are not on the agenda
 ChipDev Emulator API (chipemuapi) - An Emulator API for use in the ChipDev Debugger
 ChipDev Extracter (chipextract) - Extract archives on platforms without the required extractor
 ChipDev FontEdit (chipfed) - Edit fonts with this simple tool
@@ -14,11 +16,15 @@ ChipDev FTP Client (chipftp) - Connect to FTP servers to download source code
 ChipDev Hex Editor (chiphex) - Edit files in binary, hexadecimal, plain text, decimal, undecimal, and more
 ChipDev Icon Editor (chipicon) - Edit icon files used with your executables and libraries
 ChipDev Java Compiler (chipjava) - Compile Java code to optimized native code for various chips
-ChipDev Librarian (chiplib) - Creates static and dynamic libraries
+ChipDev Librarian (chiplib) - Creates static and dynamic libraries and views imports and emports of executables and libraries
 ChipDev Linker (chipld) - A Linker to link object files together for various chips with special optimizations to ensure a high quality executable
 ChipDev Manual (chipman) - Documentation about the whole project
 ChipDev Maker (chipmake) - Reads Makefiles and executes the proper commands
+ChipDev MakeROM (chipmkrom) - Convert Executables into ROM files
+ChipDev ObjectView (chipobjview) - Prints information about object and binary files
+ChipDev Perl Compiler (chipperl) - A Perl Compiler designed to create highly optimized executables for various chips
 ChipDev Python Compiler (chippy) - A Python Compiler designed to create optimized executables for various chips
+ChipDev ROM Copy (chipromcp) - Copy ROMs to your chip easily
 ChipDev Samples (chipsamples) - Pre-built sample executables for comparing your build and the master build (code is under /Chips/[creator]/[model number]/examples)
 ChipDev Shell (chipsh) - A POSIX-compatible shell for use with compiling
 ChipDev Standard Basic Library (chiplibbas) - The Basic Library for ChipDev
@@ -30,7 +36,12 @@ ChipDev TextDevelop (chiptxt) - A Plain Text Editor for coding
 ChipDev Walker (chipwalk) - View Object files and Executables with stats on every dependency for every function, class, variable, etc.
 
 ChipDev Supported Chips:
+Analog Devices ICM7555 (Chips/analog_devices/icm7555) - General-Purpose Timer
+Fujitsu MB81416-10 (Chips/fujitsu/mb81416-10) - NMOS DRAM
+Inmos IMSG171 (Chips/inmos/imsg171) - High Performace CMOS Colour Look-Up Table
 Intel 21154 (Chips/intel/21154) - PCI-to-PCI Bridge
+Intel 8086 (Chips/intel/8086) - HMOS Microprocessor
+Intel 82541ER (Chipes/intel/82541er) - Gigabit Ethernet Controller
 Intel 82801AA (Chips/intel/82801aa) - I/O Controller Hub AC '97 (ICH)
 Intel 82801AB (Chips/intel/82801ab) - I/O Controller Hub AC '97 (ICH0)
 Intel 82801EB (Chips/intel/82801eb) - I/O Controller Hub 5 (ICH5)
@@ -38,15 +49,24 @@ Intel SA-110 (Chips/intel/sa-110) - StrongARM Microprocessor
 Motorola MC68349 (Chips/motorola/mc68349) - High Performance Integrated Microprocessor
 Motorola MC6847 (Chips/motorola/mc6847) - Non-Interface Video Display Generator
 Motorola MC6847Y (Chips/motorola/mc6847y) - Interface Video Display Generator
+Motorola MC74F32 (Chips/motorola/mc74f32) - QUAD 2-Input Or Gate
+Realtek ALC887 (Chips/realtek/alc887) - High Definition Audio Codec
 Silicon Labs SI4362 (Chips/silicon_labs/si4362) - High-Performance, Low-Current Receiver
+Texas Instruments SN74ALS245A (Chips/texas_instruments/sn74als245a) - Octal Bus Transceiver
 Texas Instruments TLV320AIC33 (Chips/texas_instruments/tlv320aic33) - Low Power Stereo Audio Codec for Portable Audio/Telephony
+Umc UM6845 (Chips/umc/um6845) - CRT Controller
 Winbond W25N01GW (Chips/winbond/w25n01gw) - Serial Flash Memory
 
 ChipDev /Chips Directory Layout:
 /Chips/[creator]/[model number] - [creator] is the manufacturer of the chip, while [model number] is the model number of the series of chips
--> /api - Chip API for Chip-Related Features
+-> /api - Chip API for Chip-Related Features for ChipDev Features
+-> /cfg - Configuration Files for real chip with the ChipDev Debugger
 -> /config - Configuration Files for Building ChipDev Features
 -> /docs - Chip Documentation
 -> /emu - Emulation Files for ChipDev Debugger
 -> /examples - Example Code for Testing the Tools
+-> /fp - Floating-Point Emulation
+-> /libs - Static and Shared Libraries with Chip Defined Features
 -> /mkfiles - Makefiles for Building Chip-Specific Builds of ChipDev Tools
+-> /romcf - Configuration Files for ChipDev ROM-related features
+-> /todo - Documentation related to missing features, bugs, etc. that will need to be addressed
