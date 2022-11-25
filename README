@@ -15,6 +15,7 @@ ChipDev Extracter (chipextract) - Extract archives on platforms without the requ
 ChipDev FontEdit (chipfed) - Edit fonts with this simple tool
 ChipDev FTP Client (chipftp) - Connect to FTP servers to download source code
 ChipDev Hex Editor (chiphex) - Edit files in binary, hexadecimal, plain text, decimal, undecimal, and more
+ChipDev HTTP Client (chiphttp) - Connect to HTTP/HTTPS servers to download source code
 ChipDev Icon Editor (chipicon) - Edit icon files used with your executables and libraries
 ChipDev Java Compiler (chipjava) - Compile Java code to optimized native code for various chips
 ChipDev Librarian (chiplib) - Creates static and dynamic libraries and views imports and emports of executables and libraries
@@ -51,11 +52,13 @@ Intel 82801AA (Chips/intel/82801aa) - I/O Controller Hub AC '97 (ICH)
 Intel 82801AB (Chips/intel/82801ab) - I/O Controller Hub AC '97 (ICH0)
 Intel 82801EB (Chips/intel/82801eb) - I/O Controller Hub 5 (ICH5)
 Intel SA-110 (Chips/intel/sa-110) - StrongARM Microprocessor
+Motorola MC6809 (Chips/motorola/mc6809) - Microprocessing Unit
 Motorola MC68349 (Chips/motorola/mc68349) - High Performance Integrated Microprocessor
 Motorola MC6847 (Chips/motorola/mc6847) - Non-Interface Video Display Generator
 Motorola MC6847Y (Chips/motorola/mc6847y) - Interface Video Display Generator
 Motorola MC74F32 (Chips/motorola/mc74f32) - QUAD 2-Input Or Gate
 Motorola MCM514256A (Chips/motorola/mcm514256a) - CMOS Dynamic RAM
+Motorola SN74LS273 (Chips/motorola/sn74ls273) - Octal Flip-Flop
 Realtek ALC887 (Chips/realtek/alc887) - High Definition Audio Codec
 Silicon Labs SI4362 (Chips/silicon_labs/si4362) - High-Performance, Low-Current Receiver
 Texas Instruments AM3517 (Chips/texas_instruments/am3517) - Sitara Processor
@@ -68,19 +71,26 @@ Winbond W25N01GW (Chips/winbond/w25n01gw) - Serial Flash Memory
 ChipDev /Chips Directory Layout:
 /Chips/[creator]/[model number] - [creator] is the manufacturer of the chip, while [model number] is the model number of the series of chips
 -> /api - Chip-related API for ChipDev Features
+-> /bgi - Basic Graphical Interface Assembly Code
 -> /cfg - Configuration Files for real chip with the ChipDev Debugger
+-> /classes - Class Objects for Chip API
 -> /compressed - Compressed ROM/Executable Support
 -> /config - Configuration Files for Building ChipDev Features
+-> /decompressed - Decompression for Compressed ROM/Executable Support
 -> /docs - Chip Documentation
 -> /emu - Emulation Files for ChipDev Debugger
 -> /examples - Example Code for Testing the Tools
 -> /fp - Common Floating-Point Files
 -> /fpemu - Floating-Point Emulation
+-> /fpex - Floating-Point Extensions
 -> /fpoint - Native Floating-Point Support
 -> /gns - Graphical Numbering System (GNS), An Advanced Graphical Interface in Assembly
+-> /hex - Common Hexadecimal Objects for Chip API
 -> /include - Headers for other compilers
 -> /libs - Static and Shared Libraries with Chip Defined Features
+-> /log - Debugger Logs for testing
 -> /mkfiles - Makefiles for Building Chip-Specific Builds of ChipDev Tools
 -> /romcf - Configuration Files for ChipDev ROM-related features
+-> /roms - Common ROMs as templates
 -> /support - Supporting Configuration Files for Native Floating-Point Support, Floating Point Emulation, and GNS
 -> /todo - Documentation related to missing features, bugs, etc. that will need to be addressed
