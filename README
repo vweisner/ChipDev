@@ -31,14 +31,16 @@ ChipDev Resource Editor (chipresedit) Edit Resource Files used for various ROMs 
 ChipDev ROM Copy (chipromcp) - Copy ROMs to your chip easily
 ChipDev Samples (chipsamples) - Pre-built sample executables for comparing your build and the master build (code is under /Chips/[creator]/[model number]/examples)
 ChipDev Sed-like Tool (chipsed) - A Sed-like tool for ChipDev
-ChipDev Shell (chipsh) - A POSIX-compatible shell for use with compiling
+ChipDev Shell (chipsh) - A POSIX shell for development
 ChipDev Standard Basic Library (chiplibbas) - The Basic Library for ChipDev
 ChipDev Standard C Library (chiplibc) - The C Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev Standard C++ Library (chiplibcpp) - The C++ Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev Standard Java Library (chiplibjava) - The Java Library for ChipDev
 ChipDev Standard Python Library (chiplibpy) - The Python Library for ChipDev to be compatible with every programming standard with extensions
+ChipDev Tests (chiptest) - Tests to test performance of each chip and ported features
 ChipDev TextDevelop (chiptxt) - A Plain Text Editor for coding
 ChipDev Walker (chipwalk) - View Object files and Executables with stats on every dependency for every function, class, variable, etc.
+ChipDev XML Resources (chipxmlres) - Resources for reading and writing XML files
 ChipDev Yacc Tool (chipyacc) - A YACC-like tool useful for development
 
 ChipDev Supported Chips:
@@ -67,9 +69,11 @@ Texas Instruments TLV320AIC33 (Chips/texas_instruments/tlv320aic33) - Low Power 
 Trident TVGA9000i (Chips/trident/tvga9000i) - VGA Controller
 Umc UM6845 (Chips/umc/um6845) - CRT Controller
 Winbond W25N01GW (Chips/winbond/w25n01gw) - Serial Flash Memory
+Yamaha YM3812 (Chips/yamaha/ym3812) - FM Operator
 
 ChipDev /Chips Directory Layout:
 /Chips/[creator]/[model number] - [creator] is the manufacturer of the chip, while [model number] is the model number of the series of chips
+-> /3d - 3-D Graphics Support
 -> /api - Chip-related API for ChipDev Features
 -> /bgi - Basic Graphical Interface Assembly Code
 -> /cfg - Configuration Files for real chip with the ChipDev Debugger
@@ -78,6 +82,7 @@ ChipDev /Chips Directory Layout:
 -> /config - Configuration Files for Building ChipDev Features
 -> /decompressed - Decompression for Compressed ROM/Executable Support
 -> /docs - Chip Documentation
+-> /efi - EFI Support
 -> /emu - Emulation Files for ChipDev Debugger
 -> /examples - Example Code for Testing the Tools
 -> /fp - Common Floating-Point Files
@@ -85,12 +90,19 @@ ChipDev /Chips Directory Layout:
 -> /fpex - Floating-Point Extensions
 -> /fpoint - Native Floating-Point Support
 -> /gns - Graphical Numbering System (GNS), An Advanced Graphical Interface in Assembly
+-> /gnu - Extended gnulib Package
 -> /hex - Common Hexadecimal Objects for Chip API
 -> /include - Headers for other compilers
 -> /libs - Static and Shared Libraries with Chip Defined Features
 -> /log - Debugger Logs for testing
 -> /mkfiles - Makefiles for Building Chip-Specific Builds of ChipDev Tools
+-> /rom - ROM Samples
 -> /romcf - Configuration Files for ChipDev ROM-related features
 -> /roms - Common ROMs as templates
+-> /stdc - Standard C Library Support Headers
 -> /support - Supporting Configuration Files for Native Floating-Point Support, Floating Point Emulation, and GNS
+-> /timer - Timer Support
 -> /todo - Documentation related to missing features, bugs, etc. that will need to be addressed
+-> /vga - VGA Compatible Drivers
+-> /video - OpenGL Video Drivers
+-> /xml - XML Metadata for Emulation
