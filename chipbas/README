@@ -1,0 +1,23 @@
+ChipDev Basic Compiler
+----------------------
+
+The purpose of this compiler is to compile various BASIC dialects in one compiler.
+
+Keywords:
+Pre-programmed words that cannot be overridden in one or more dialects.
+#INCLUDE (FB) - Include another source code file
+BOOLEAN (FB) - Boolean data type
+PASCAL (FB) - Pascal-style calling convention
+WBIN (FB) - Returns Unicode binary representation of a number
+
+Language Modes:
+Different Dialects to choose from
+ALL - Mix every dialect together (includes extensions)
+COLOR - Color BASIC
+COLOR+ - Color BASIC (includes extensions)
+COLOREX - Extended Color BASIC
+FB - FreeBASIC
+FB+ - FreeBASIC (includes extensions)
+VB - Visual BASIC
+VB.NET - Visual BASIC .NET
+VBSCR - Visual BASIC Script
