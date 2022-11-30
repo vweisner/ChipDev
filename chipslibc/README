@@ -30,8 +30,11 @@ wchar.h
 
 Functions:
 These are the functions in the library.
+exit (stdlib.h) - Normal Process Termination
 printf (stdio.h) - Prints formastted output to stdout, a file stream, or a buffer
+putc (stdio.h) - Output Characters and Strings
 strlen (string.h) - Returns the length of a given string
+uselocale (locale.h) - Set/Get locale for calling thread
 
 Macros:
 These are the macros in the library.
@@ -43,7 +46,9 @@ NULL (stddef.h) - Null pointer constant
 Typedefs:
 These are the types defined in the library.
 gid_t (sys/types.h) - Used for Group IDs
+intptr_t (stdint.h) - Integer Type for Pointers
 size_t (stddef.h; sys/types.h) - Used for Sizes of Objects
+uintptr_t (stdint.h) - Unsigned Integer Type for Pointers
 
 Structs:
 These are the structures defined in the library.
