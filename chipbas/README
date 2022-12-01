@@ -8,11 +8,13 @@ Pre-programmed words that cannot be overridden in one or more dialects.
 #INCLUDE (FB) - Include another source code file
 BOOLEAN (FB) - Boolean data type
 PASCAL (FB) - Pascal-style calling convention
+REM (VB.NET) - Comment
 WBIN (FB) - Returns Unicode binary representation of a number
 
 Language Modes:
 Different Dialects to choose from
 ALL - Mix every dialect together (includes extensions)
+ANSI - ANSI BASIC
 COLOR - Color BASIC
 COLOR+ - Color BASIC (includes extensions)
 COLOREX - Extended Color BASIC
