@@ -4,6 +4,7 @@ ChipDev Features:
 ChipDev Assembler (chipasm) - An Assembler designed to assemble high quality executables with special optimizations
 ChipDev AWK Tool (chipawk) - An AWK-like tool designed with speed in mind
 ChipDev Basic Compiler (chipbas) - Compiler Basic code with optimizations for various chips
+ChipDev Basic Resource Compiler (chipbrs) - Compiles Resource files without advanced optimizations
 ChipDev C Compiler (chipc) - A C Compiler designed to create optimized executables for various chips
 ChipDev C++ Compiler (chipcpp) - A C++ Compiler designed to create optimized executable for various chips
 ChipDev Debugger (chipdbg) - A Debugger designed to test and debug various programs for a variety of chips
@@ -75,9 +76,11 @@ Yamaha YM3812 (Chips/yamaha/ym3812) - FM Operator
 ChipDev /Chips Directory Layout:
 /Chips/[creator]/[model number] - [creator] is the manufacturer of the chip, while [model number] is the model number of the series of chips
 -> /3d - 3-D Graphics Support
+-> /asm - Assembler Configuration
 -> /aout - a.out Binary Format Support
 -> /api - Chip-related API for ChipDev Features
 -> /bgi - Basic Graphical Interface Assembly Code
+-> /bmp - Bitmap Support
 -> /cfg - Configuration Files for real chip with the ChipDev Debugger
 -> /classes - Class Objects for Chip API
 -> /coff - COFF Binary Format Support
