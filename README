@@ -16,10 +16,12 @@ ChipDev Extracter (chipextract) - Extract archives on platforms without the requ
 ChipDev FontEdit (chipfed) - Edit fonts with this simple tool
 ChipDev Fortran Compiler (chipfor) - A Fortran Compiler to compile Fortran to various chips
 ChipDev FTP Client (chipftp) - Connect to FTP servers to download source code
+ChipDev FTPS Client (chipftps) - Connect to FTPS servers to download source code
 ChipDev Hex Editor (chiphex) - Edit files in binary, hexadecimal, plain text, decimal, undecimal, and more
 ChipDev HTTP Client (chiphttp) - Connect to HTTP/HTTPS servers to download source code
 ChipDev Icon Editor (chipicon) - Edit icon files used with your executables and libraries
 ChipDev Java Compiler (chipjava) - Compile Java code to optimized native code for various chips
+ChipDev JavaScript Compiler (chipjsc) - JavaScript Compiler
 ChipDev Librarian (chiplib) - Creates static and dynamic libraries and views imports and emports of executables and libraries
 ChipDev Linker (chipld) - A Linker to link object files together for various chips with special optimizations to ensure a high quality executable
 ChipDev Manual (chipman) - Documentation about the whole project
@@ -34,6 +36,7 @@ ChipDev ROM Copy (chipromcp) - Copy ROMs to your chip easily
 ChipDev Samples (chipsamples) - Pre-built sample executables for comparing your build and the master build (code is under /Chips/[creator]/[model number]/examples)
 ChipDev Sed-like Tool (chipsed) - A Sed-like tool for ChipDev
 ChipDev Shell (chipsh) - A POSIX shell for development
+ChipDev SSH Client (chipssh) - Connect and control chips via SSH
 ChipDev Standard Basic Library (chiplibbas) - The Basic Library for ChipDev
 ChipDev Standard C Library (chiplibc) - The C Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev Standard C++ Library (chiplibcpp) - The C++ Library for ChipDev to be compatible with every programming standard with extensions
@@ -88,6 +91,7 @@ ChipDev /Chips Directory Layout:
 -> /compressed - Compressed ROM/Executable Support
 -> /config - Configuration Files for Building ChipDev Features
 -> /decompressed - Decompression for Compressed ROM/Executable Support
+-> /dhcp - DHCP Protocol Support
 -> /docs - Chip Documentation
 -> /ecoff - ECOFF Binary Format Support
 -> /efi - EFI Support
