@@ -8,6 +8,7 @@ Pre-programmed words that cannot be overridden in one or more dialects.
 #INCLUDE (FB) - Include another source code file
 BOOLEAN (FB) - Boolean data type
 PASCAL (FB) - Pascal-style calling convention
+PRINT (COLOR) - Print text to screen (ANSI, Codepages, or Unicode)
 REM (VB.NET) - Comment
 WBIN (FB) - Returns Unicode binary representation of a number
 
@@ -18,8 +19,12 @@ ANSI - ANSI BASIC
 COLOR - Color BASIC
 COLOR+ - Color BASIC (includes extensions)
 COLOREX - Extended Color BASIC
+COLOREX+ - Extened Color BASIC (includes extensions)
 FB - FreeBASIC
 FB+ - FreeBASIC (includes extensions)
 VB - Visual BASIC
 VB.NET - Visual BASIC .NET
 VBSCR - Visual BASIC Script
+VBS - Alias for VBSCR
+VISUAL - Alias for VB
+VISUAL.NET - Alias for VB.NET
