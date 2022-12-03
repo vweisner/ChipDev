@@ -1,5 +1,23 @@
 ChipDev - Development for various chips
 
+ChipDev Files and Directories:
+All directories do not contain the '.' symbol.
+All file types are grouped by the file extension (.***).
+*.bat - DOS/Windows Batch File
+*.c - C Source Code
+*.coff - COFF Executable
+*.config - Another Configuration File
+*.cpp - C++ Source Code
+*.elf - ELF Executable
+*.ini - Configuration File
+*.java - Java Source Code
+*.log - Build Log
+*.o - ELF Object File
+*.obj - COFF Object File
+*.out - a.out Executable
+*.txt - Plain Text Document
+*.xml - XML Source Code
+
 ChipDev Features:
 ChipDev Assembler (chipasm) - An Assembler designed to assemble high quality executables with special optimizations
 ChipDev AWK Tool (chipawk) - An AWK-like tool designed with speed in mind
@@ -7,6 +25,7 @@ ChipDev Basic Compiler (chipbas) - Compiler Basic code with optimizations for va
 ChipDev Basic Resource Compiler (chipbrs) - Compiles Resource files without advanced optimizations
 ChipDev C Compiler (chipc) - A C Compiler designed to create optimized executables for various chips
 ChipDev C++ Compiler (chipcpp) - A C++ Compiler designed to create optimized executable for various chips
+ChipDev C# Compiler (chipcsc) - C# Compiler for many chips
 ChipDev Debugger (chipdbg) - A Debugger designed to test and debug various programs for a variety of chips
 ChipDev DiskTool (chipdsk) - A Tool for storage to repair, debug, restore, format, resize, inspect, realign, defragment, remove, and create partitions, among other uses
 ChipDev DocMaker (chipdocmake) - Source-to-Doc Document Maker
@@ -45,6 +64,7 @@ ChipDev Standard C Library (chiplibc) - The C Library for ChipDev to be compatib
 ChipDev Standard C++ Library (chiplibcpp) - The C++ Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev Standard Java Library (chiplibjava) - The Java Library for ChipDev
 ChipDev Standard Python Library (chiplibpy) - The Python Library for ChipDev to be compatible with every programming standard with extensions
+ChipDev Supported Chips (Chips) - Files to support various chips
 ChipDev Tests (chiptest) - Tests to test performance of each chip and ported features
 ChipDev TextDevelop (chiptxt) - A Plain Text Editor for coding
 ChipDev Walker (chipwalk) - View Object files and Executables with stats on every dependency for every function, class, variable, etc.
@@ -84,6 +104,7 @@ ChipDev /Chips Directory Layout:
 -> /3d - 3-D Graphics Support
 -> /asm - Assembler Configuration
 -> /aout - a.out Binary Format Support
+-> /32bit - 32-bit a.out
 -> /api - Chip-related API for ChipDev Features
 -> /bgi - Basic Graphical Interface Assembly Code
 -> /bmp - Bitmap Support
@@ -105,6 +126,7 @@ ChipDev /Chips Directory Layout:
 -> /elfex - ELF Binary Format Extensions
 -> -> /16bit - 16-bit ELF
 -> -> /50bit - 50-bit ELF
+-> -> /60bit - 60-bit ELF
 -> -> /fatelf - Generic Fat Binary Support for ELF
 -> /emu - Emulation Files for ChipDev Debugger
 -> /examples - Example Code for Testing the Tools
@@ -112,6 +134,8 @@ ChipDev /Chips Directory Layout:
 -> /fpemu - Floating-Point Emulation
 -> /fpex - Floating-Point Extensions
 -> /fpoint - Native Floating-Point Support
+-> /ftp - FTP Protocol Support
+-> /ftpfp - FTP Protocol through Floating-Point
 -> /gns - Graphical Numbering System (GNS), An Advanced Graphical Interface in Assembly
 -> /gnu - Extended gnulib Package
 -> -> /include - Gnulib headers
@@ -119,6 +143,7 @@ ChipDev /Chips Directory Layout:
 -> /include - Headers for other compilers
 -> /libs - Static and Shared Libraries with Chip Defined Features
 -> /log - Debugger Logs for testing
+-> -> /obj - Object File Debug Logs
 -> /mkfiles - Makefiles for Building Chip-Specific Builds of ChipDev Tools
 -> /rom - ROM Samples
 -> /romcf - Configuration Files for ChipDev ROM-related features
