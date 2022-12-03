@@ -18,31 +18,44 @@ Keywords (Defined in ../chipslibc/README)
 
 Headers:
 These are the files to include for definitions.
-aout.h
-arabic.h
+aout.h - a.out Support
+arabic.h - Support for the Arabic script and language
 assert.h
-bin/coff.h
-bin/xcoff.h
-bits/lang.h
+bin/coff.h - Extra COFF Support
+bin/elf.h
+bin/xcoff.h - Extra XCOFF Support
+bits/lang.h - Hidden Language Support
 chinese.h
+codepg.h - Codepages
 coff.h
 complex.h
-ecoff.h
-elf.h
-fareast.h
-ftp.h
+ecoff.h - ECOFF Support
+elf.h - ELF Support
+elfex.h - ELF Extensions
+english.h - Support for the English language
+fareast.h - Far East Script Support
+ftp.h - FTP Support
 greek.h
-hebrew.h
-http.h
-https.h
-latin1.h
-latin2.h
-latin3.h
+hebrew.h - Support for the Hebrew language and script
+http.h - HTTP Support
+https.h - HTTPS Support
+latin1.h - Support for Latin Script and language
+latin2.h - Nonstandard Latin Symbols
+latin3.h - More Nonstandard Latin Symbols
 libgen.h
 limits.h
 locale.h
 net/arpa.h
-net/ftp.h
+net/ftp.h - Basic FTP Support
+net/https.h - Basic HTTPS Support
+os/bsd.h - BSD API ported to each chip
+os/dos.h - DOS API ported to each chip
+os/linux.h - Linux API ported to each chip
+os/os2.h - OS/2 API ported to each chip
+os/posix.h - POSIX API ported to each chip
+os/unix.h - UNIX API ported to each chip
+os/win32.h - Win32 API ported to each chip
+os/wince.h - Windows CE API ported to each chip
 signal.h
 stdbool.h
 stddef.h
@@ -52,8 +65,8 @@ stdlang.h
 string.h
 sys/lang.h
 sys/types.h
-uchar.h
-wchar.h
+uchar.h - Unicode Characters
+wchar.h - Wide-Byte Characters
 xcoff.h
 
 Functions:
