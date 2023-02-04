@@ -3,18 +3,32 @@ ChipDev - Development for various chips
 ChipDev Files and Directories:
 All directories do not contain the '.' symbol.
 All file types are grouped by the file extension (.***).
+*.7z - 7-Zip Archive
+*.a - Static Library
 *.bat - DOS/Windows Batch File
 *.c - C Source Code
+*.class - Java Class File
 *.coff - COFF Executable
 *.config - Another Configuration File
 *.cpp - C++ Source Code
 *.elf - ELF Executable
+*.gz - Gzip Archive
+*.inf - Installer (Windows)
 *.ini - Configuration File
+*.install - Install Configuration File
+*.jar - Java Executable for JVM
 *.java - Java Source Code
+*.js - JavaScript Source Code
+*.lib - Shared Library
 *.log - Build Log
+*.man - Manual Page
+*.mk - Makefile
 *.o - ELF Object File
 *.obj - COFF Object File
 *.out - a.out Executable
+*.sh - Shell Script
+*.slib - Shared Library Backup
+*.tar - Tar Archive
 *.txt - Plain Text Document
 *.xml - XML Source Code
 
@@ -30,6 +44,7 @@ ChipDev Debugger (chipdbg) - A Debugger designed to test and debug various progr
 ChipDev DiskTool (chipdsk) - A Tool for storage to repair, debug, restore, format, resize, inspect, realign, defragment, remove, and create partitions, among other uses
 ChipDev DocMaker (chipdocmake) - Source-to-Doc Document Maker
 ChipDev Documents (chipdocs) - Documents for possible expansions to ChipDev that are not on the agenda
+ChipDev Drivers (chipdrv) - Drivers for extending chip development
 ChipDev Emulator API (chipemuapi) - An Emulator API for use in the ChipDev Debugger
 ChipDev Extracter (chipextract) - Extract archives on platforms without the required extractor
 ChipDev FontEdit (chipfed) - Edit fonts with this simple tool
@@ -70,6 +85,7 @@ ChipDev TextDevelop (chiptxt) - A Plain Text Editor for coding
 ChipDev Walker (chipwalk) - View Object files and Executables with stats on every dependency for every function, class, variable, etc.
 ChipDev XML Resources (chipxmlres) - Resources for reading and writing XML files
 ChipDev Yacc Tool (chipyacc) - A YACC-like tool useful for development
+Supported Chips (Chips) - Chip Specific Code
 
 ChipDev Supported Chips:
 Analog Devices ICM7555 (Chips/analog_devices/icm7555) - General-Purpose Timer
@@ -104,7 +120,7 @@ ChipDev /Chips Directory Layout:
 -> /3d - 3-D Graphics Support
 -> /asm - Assembler Configuration
 -> /aout - a.out Binary Format Support
--> /32bit - 32-bit a.out
+-> -> /32bit - 32-bit a.out
 -> /api - Chip-related API for ChipDev Features
 -> /bgi - Basic Graphical Interface Assembly Code
 -> /bmp - Bitmap Support
@@ -113,16 +129,21 @@ ChipDev /Chips Directory Layout:
 -> /coff - COFF Binary Format Support
 -> -> /include - COFF Binary Headers
 -> /coffex - COFF Binary Format Extensions
+-> -> /fat - FAT32 Built-in Driver
 -> /compressed - Compressed ROM/Executable Support
 -> /config - Configuration Files for Building ChipDev Features
 -> /decompressed - Decompression for Compressed ROM/Executable Support
 -> /dhcp - DHCP Protocol Support
 -> /docs - Chip Documentation
+-> /drv - Drivers for Hardware
 -> /ecoff - ECOFF Binary Format Support
 -> /efi - EFI Support
 -> /elf - ELF Binary Format Support
 -> -> /32bit - 32-bit ELF
+-> -> -> /include - 32-bit ELF Headers
 -> -> /64bit - 64-bit ELF
+-> -> -> /include - 64-bit ELF Headers
+-> -> /include - ELF Binary Headers
 -> /elfex - ELF Binary Format Extensions
 -> -> /16bit - 16-bit ELF
 -> -> /50bit - 50-bit ELF
@@ -142,6 +163,7 @@ ChipDev /Chips Directory Layout:
 -> /hex - Common Hexadecimal Objects for Chip API
 -> /include - Headers for other compilers
 -> /libs - Static and Shared Libraries with Chip Defined Features
+-> -> /libmath - Chip Defined Math Library
 -> /log - Debugger Logs for testing
 -> -> /obj - Object File Debug Logs
 -> /mkfiles - Makefiles for Building Chip-Specific Builds of ChipDev Tools
