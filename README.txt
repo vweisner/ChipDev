@@ -5,19 +5,26 @@ All directories do not contain the '.' symbol.
 All file types are grouped by the file extension (.***).
 *.7z - 7-Zip Archive
 *.a - Static Library
+*.bas - Basic Source Code
 *.bat - DOS/Windows Batch File
+*.bz2 - Bzip2 Archive
 *.c - C Source Code
 *.class - Java Class File
 *.coff - COFF Executable
 *.config - Another Configuration File
 *.cpp - C++ Source Code
+*.dos - DOS Configuration File
 *.elf - ELF Executable
+*.env - Environmentable Variables File
+*.exe - Windows/DOS Executable
+*.gif - Animated/Static GIF Image
 *.gz - Gzip Archive
 *.inf - Installer (Windows)
 *.ini - Configuration File
 *.install - Install Configuration File
 *.jar - Java Executable for JVM
 *.java - Java Source Code
+*.jpg - JPEG Image
 *.js - JavaScript Source Code
 *.lib - Shared Library
 *.log - Build Log
@@ -26,11 +33,14 @@ All file types are grouped by the file extension (.***).
 *.o - ELF Object File
 *.obj - COFF Object File
 *.out - a.out Executable
+*.pkg - Installation Package
+*.png - PNG Image
 *.sh - Shell Script
 *.slib - Shared Library Backup
 *.tar - Tar Archive
 *.txt - Plain Text Document
 *.xml - XML Source Code
+*.xz - XZ Archive
 
 ChipDev Features:
 ChipDev Assembler (chipasm) - An Assembler designed to assemble high quality executables with special optimizations
