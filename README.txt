@@ -62,6 +62,7 @@ ChipDev Fortran Compiler (chipfor) - A Fortran Compiler to compile Fortran to va
 ChipDev FTP Client (chipftp) - Connect to FTP servers to download source code
 ChipDev FTPS Client (chipftps) - Connect to FTPS servers to download source code
 ChipDev Global Language Tool (chipglobal) - Codepages, Unicode, and Multilanguage support for ROMs and Executables
+ChipDev GUI Toolkit (chipGUI) - Tools and libraries for graphics
 ChipDev Hex Editor (chiphex) - Edit files in binary, hexadecimal, plain text, decimal, undecimal, and more
 ChipDev HTTP Client (chiphttp) - Connect to HTTP/HTTPS servers to download source code
 ChipDev Icon Editor (chipicon) - Edit icon files used with your executables and libraries
@@ -80,6 +81,7 @@ ChipDev Python Compiler (chippy) - A Python Compiler designed to create optimize
 ChipDev Resource Compiler (chipres) - Compiles Resource Files to Object Files
 ChipDev Resource Editor (chipresedit) Edit Resource Files used for various ROMs and Executables
 ChipDev ROM Copy (chipromcp) - Copy ROMs to your chip easily
+ChipDev ROM Writer (chipromwrite) - Copy ROMs from your chip for easy backup or rewrite your chip's ROM
 ChipDev Samples (chipsamples) - Pre-built sample executables for comparing your build and the master build (code is under /Chips/[creator]/[model number]/examples)
 ChipDev Sed-like Tool (chipsed) - A Sed-like tool for ChipDev
 ChipDev Shell (chipsh) - A POSIX shell for development
@@ -88,14 +90,15 @@ ChipDev Standard Basic Library (chiplibbas) - The Basic Library for ChipDev
 ChipDev Standard C Library (chiplibc) - The C Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev Standard C++ Library (chiplibcpp) - The C++ Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev Standard Java Library (chiplibjava) - The Java Library for ChipDev
+ChipDev Standard JavaScript Library (chiplibjs) - A standard library for JavaScript to aid programming
 ChipDev Standard Python Library (chiplibpy) - The Python Library for ChipDev to be compatible with every programming standard with extensions
 ChipDev Supported Chips (Chips) - Files to support various chips
 ChipDev Tests (chiptest) - Tests to test performance of each chip and ported features
 ChipDev TextDevelop (chiptxt) - A Plain Text Editor for coding
 ChipDev Walker (chipwalk) - View Object files and Executables with stats on every dependency for every function, class, variable, etc.
+ChipDev Web Browser (chipweb) - A simple web browser for connecting to HTTP, FTP, FTPS, HTTPS, SSH, TELNET, and IPX servers
 ChipDev XML Resources (chipxmlres) - Resources for reading and writing XML files
 ChipDev Yacc Tool (chipyacc) - A YACC-like tool useful for development
-Supported Chips (Chips) - Chip Specific Code
 
 ChipDev Supported Chips:
 Analog Devices ICM7555 (Chips/analog_devices/icm7555) - General-Purpose Timer
@@ -110,6 +113,7 @@ Intel 82801EB (Chips/intel/82801eb) - I/O Controller Hub 5 (ICH5)
 Intel SA-110 (Chips/intel/sa-110) - StrongARM Microprocessor
 Motorola MC6809 (Chips/motorola/mc6809) - Microprocessing Unit
 Motorola MC68349 (Chips/motorola/mc68349) - High Performance Integrated Microprocessor
+Motorola MC6845 (Chips/motorola/mc6845) - CRT Controller
 Motorola MC6847 (Chips/motorola/mc6847) - Non-Interface Video Display Generator
 Motorola MC6847Y (Chips/motorola/mc6847y) - Interface Video Display Generator
 Motorola MC74F32 (Chips/motorola/mc74f32) - QUAD 2-Input Or Gate
