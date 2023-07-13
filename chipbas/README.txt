@@ -22,6 +22,8 @@ COLOREX - Extended Color BASIC
 COLOREX+ - Extened Color BASIC (includes extensions)
 FB - FreeBASIC
 FB+ - FreeBASIC (includes extensions)
+MS - Microsoft BASIC
+MSMALL - Small BASIC
 VB - Visual BASIC
 VB.NET - Visual BASIC .NET
 VBSCR - Visual BASIC Script
