@@ -43,6 +43,7 @@ greek.h - Support for the Greek language and script
 hebrew.h - Support for the Hebrew language and script
 http.h - HTTP Support
 https.h - HTTPS Support
+latin.h - Complete Latin Script and Language Support
 latin1.h - Support for Latin Script and language
 latin2.h - Nonstandard Latin Symbols
 latin3.h - More Nonstandard Latin Symbols
@@ -51,10 +52,13 @@ limits.h - Library Limitations
 locale.h - Locale Support
 net/arpa.h
 net/ftp.h - Basic FTP Support
+net/http.h - Basic HTTP Support
 net/https.h - Basic HTTPS Support
+net/ipx.h - Basic IPX Support
 nls.h - NLS Support
 os/bsd.h - BSD API ported to each chip
 os/dos/16bit.h - 16-bit DOS API Extensions
+os/dos/32bit.h - 32-bit DOS API Extensions
 os/dos.h - DOS API ported to each chip
 os/djgpp.h - DJGPP API ported to each chip
 os/linux.h - Linux API ported to each chip
@@ -65,6 +69,7 @@ os/posix.h - POSIX API ported to each chip
 os/unix.h - UNIX API ported to each chip
 os/win16.h - Win16 API ported to each chip
 os/win32.h - Win32 API ported to each chip
+os/win64.h - Win64 API ported to each chip
 os/wince.h - Windows CE API ported to each chip
 pthreads.h - POSIX Threads
 signal.h
@@ -77,7 +82,10 @@ stdlib.h
 string.h
 sys/lang.h
 sys/types.h - Common Typedefs
+threads.h - Common Threads
+threadsex.h - Common Threads Extensions
 uchar.h - Unicode Characters
+unistd.h - Standard POSIX Header
 wchar.h - Wide-Byte Characters
 windows.h - Windows API Common Header
 xcoff.h - XCOFF Support
@@ -86,6 +94,7 @@ Functions:
 These are the functions in the library.
 elf_exec (elf.h) - Execute ELF Binary
 exit (stdlib.h) - Normal Process Termination
+ftp_start (ftp.h) - Start FTP Services (Client and/or Server)
 load_elf (elf.h) - Load ELF Binary
 malloc (stdlib.h) - Allocates dynamic memory
 printf (stdio.h) - Prints formastted output to stdout, a file stream, or a buffer
@@ -102,6 +111,8 @@ NULL (stddef.h) - Null pointer constant
 
 Typedefs:
 These are the types defined in the library.
+_ftp_t (net/ftp.h) - FTP Functions type
+ftp_t (ftp.h) - Alias of _ftp_t
 gid_t (sys/types.h) - Used for Group IDs
 intptr_t (stdint.h) - Integer Type for Pointers
 size_t (stddef.h; sys/types.h) - Used for Sizes of Objects
@@ -111,5 +122,8 @@ Structs:
 These are the structures defined in the library.
 FTP (net/ftp.h) - FTP Functions
 -> chdir - Change directories while browsing the FTP Server
+-> dir - See what directory you are in
+-> ls - See the contents of the current directory
+-> mkdir - Make a new directory
 lconv (locale.h) - Formatting details that are returned by localeconv
 -> mon_grouping - A string whose elements indicate the sizes of digit groups
